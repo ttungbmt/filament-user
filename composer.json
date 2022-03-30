@@ -1,22 +1,23 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ttungbmt/filament-user",
+    "description": "This is my package filament-user",
     "keywords": [
-        ":vendor_name",
+        "ttungbmt",
         "laravel",
-        ":package_slug"
+        "filament-user"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ttungbmt/filament-user",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Truong Thanh Tung",
+            "email": "ttungbmt@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
+        "stechstudio/filament-impersonate": "^2.4",
         "spatie/laravel-package-tools": "^1.9.2",
         "illuminate/contracts": "^9.0"
     },
@@ -34,13 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "FilamentPro\\FilamentUser\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "FilamentPro\\FilamentUser\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,11 +54,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "FilamentPro\\FilamentUser\\FilamentUserServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
