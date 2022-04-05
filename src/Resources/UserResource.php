@@ -14,6 +14,7 @@ use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
+use pxlrbt\FilamentExcel\Actions\ExportAction;
 use STS\FilamentImpersonate\Impersonate;
 use FilamentPro\FilamentUser\Resources\UserResource\Pages;
 
@@ -67,6 +68,9 @@ class UserResource extends Resource
             ->prependActions([
                 Impersonate::make('impersonate')->tooltip(__('Impersonate')),
             ])
+            ->prependBulkActions([
+                ExportAction::make('export')->label('Export selected')->icon('heroicon-o-download')->withHeadings()
+            ])
             ->filters([
                 Filter::make('verified')
                     ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
@@ -86,6 +90,7 @@ class UserResource extends Resource
     {
         return [
             'index' => Pages\ListUsers::route('/'),
+//            'index' => Pages\ManageUser::route('/'),
             'create' => Pages\CreateUser::route('/create'),
             'edit' => Pages\EditUser::route('/{record}/edit'),
         ];
