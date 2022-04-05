@@ -2,9 +2,9 @@
 
 namespace FilamentPro\FilamentUser;
 
+use Filament\PluginServiceProvider;
 use FilamentPro\FilamentUser\Resources\UserResource;
 use Spatie\LaravelPackageTools\Package;
-use Filament\PluginServiceProvider;
 
 class FilamentUserServiceProvider extends PluginServiceProvider
 {

@@ -2,21 +2,18 @@
 
 namespace FilamentPro\FilamentUser\Resources;
 
-use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
-use Filament\Forms;
 use Filament\Forms\Components\BelongsToManyMultiSelect;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
-use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
+use FilamentPro\FilamentUser\Resources\UserResource\Pages;
 use Illuminate\Database\Eloquent\Builder;
 use pxlrbt\FilamentExcel\Actions\ExportAction;
 use STS\FilamentImpersonate\Impersonate;
-use FilamentPro\FilamentUser\Resources\UserResource\Pages;
 
 class UserResource extends Resource
 {

@@ -2,9 +2,9 @@
 
 namespace FilamentPro\FilamentUser\Tests;
 
+use FilamentPro\FilamentUser\FilamentUserServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use FilamentPro\FilamentUser\FilamentUserServiceProvider;
 
 class TestCase extends Orchestra
 {

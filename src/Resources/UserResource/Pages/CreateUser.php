@@ -2,8 +2,8 @@
 
 namespace FilamentPro\FilamentUser\Resources\UserResource\Pages;
 
-use FilamentPro\FilamentUser\Resources\UserResource;
 use Filament\Resources\Pages\CreateRecord;
+use FilamentPro\FilamentUser\Resources\UserResource;
 
 class CreateUser extends CreateRecord
 {
