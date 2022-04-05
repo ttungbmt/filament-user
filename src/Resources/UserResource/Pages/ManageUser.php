@@ -2,9 +2,6 @@
 
 namespace FilamentPro\FilamentUser\Resources\UserResource\Pages;
 
-use App\Filament\Resources\HcTinhResource;
-use App\Filament\Widgets\HcTinhFilters;
-use App\Filament\Widgets\LatestUsers;
 use FilamentPro\FilamentUser\Resources\UserResource;
 use FilamentPro\Resources\Pages\ManageRecords;
 
@@ -21,5 +18,4 @@ class ManageUser extends ManageRecords
     {
         return $this->getCreateFormSchema();
     }
-
 }

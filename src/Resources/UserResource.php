@@ -66,7 +66,7 @@ class UserResource extends Resource
                 Impersonate::make('impersonate')->tooltip(__('Impersonate')),
             ])
             ->prependBulkActions([
-                ExportAction::make('export')->label('Export selected')->icon('heroicon-o-download')->withHeadings()
+                ExportAction::make('export')->label('Export selected')->icon('heroicon-o-download')->withHeadings(),
             ])
             ->filters([
                 Filter::make('verified')
